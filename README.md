@@ -1,3 +1,5 @@
+# Link to project: https://ivailoiliev89-netizen.github.io/Manchester-United-Fan-Site/
+
 # Manchester United Fan Site
 This project is part of my learning journey in front-end development.
 
@@ -20,7 +22,7 @@ This is a fan website for Manchester United, created as a junior project.
 - JavaScript
 
 ## Author
-- Ivaylo Iliev
+- Ivailo Iliev
 
 ## Notes
 - Designed as a junior project for learning HTML, CSS, and JS
