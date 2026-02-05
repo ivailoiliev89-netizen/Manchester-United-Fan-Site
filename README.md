@@ -48,8 +48,4 @@ Created as a portfolio frontend project.
 - Creating simple static websites
 - Insert a JavaScript for more readable code and view of project
 
-## Author
-
-Ivailo Iliev
-GitHub: https://github.com/ivailoiliev89-netizen
 
