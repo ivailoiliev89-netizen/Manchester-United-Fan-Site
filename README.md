@@ -26,10 +26,6 @@ Created as a portfolio frontend project.
 - CSS
 - JavaScript
 
-## Author
-
-- Ivailo Iliev
-
 ## Notes
 1. Download or clone the repository:
 2. ```bash
