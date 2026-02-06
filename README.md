@@ -26,12 +26,17 @@ Created as a portfolio frontend project.
 - CSS
 - JavaScript
 
-## Notes
+## Instructions to setup
+
 1. Download or clone the repository:
 2. ```bash
 3. git clone https://github.com/ivailoiliev89-netizen/Manchester-United-Fan-Site.git
-4. Images should be placed in the `images/` folder
-5. Open index.html in your browser
+4. There are two ways to view this project:
+Option 1: Direct Open
+- Simply locate the `index.html` file in the root folder and open it with any web browser.
+Option 2: Local Server (Recommended)
+- If you have Python installed, run this command in the project directory:
+```bash python -m http.server 8000
 
 ## What I Learned
 
