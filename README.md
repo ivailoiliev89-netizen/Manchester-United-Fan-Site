@@ -1,5 +1,5 @@
 # Manchester United Fan Site
-Follow the link to see the project : https://ivailoiliev89-netizen.github.io/Manchester-United-Fan-Site/
+Follow the link to see the project : https://ivailoiliev89-netizen.github.io/Manchester-United-Fan-Site/ .
 This is part of my learning journey in front-end development.
 A static fan website dedicated to Manchester United. 
 The project focuses on HTML structure and CSS styling also and a bit of JavaScript.
