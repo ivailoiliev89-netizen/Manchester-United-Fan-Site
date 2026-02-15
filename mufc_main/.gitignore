@@ -1,0 +1,7 @@
+mufc_venv/
+venv/
+.env
+db.sqlite3
+__pycache__/
+*.pyc
+.DB_Store
