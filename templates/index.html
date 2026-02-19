@@ -2,24 +2,39 @@
 {% load static %}
 {% block content%}
 
-  <!-- Title -->
-  <section id="title" class="gradient-background">
-    <img src="{% static 'images/man-utd-logo.png' %}" alt="Manchester United Logo" class="club-logo">
-    <h1>Manchester United</h1>
-    <p>The Red Devils</p>
-      <a href="{% url 'club:learn-more' %}">
-        <button>Learn more</button>
-      </a>
-  </section>
+<!-- Title -->
+<section id="title" class="gradient-background">
+  <img src="{% static 'images/man-utd-logo.png' %}" alt="Manchester United Logo" class="club-logo">
+  <h1>Manchester United</h1>
+  <p>The Red Devils</p>
+    <a href="{% url 'club:learn-more' %}">
+      <button>Learn more</button>
+    </a>
+</section>
 
-  <!-- Gallery -->
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-container">
-      <img src="{% static 'images/old-trafford.jpg' %}" alt="Old Trafford">
-      <img src="{% static 'images/man-utd-team.jpg'%}" alt="Manchester United Team">
-      <img src="{% static 'images/trophy.jpg' %}" alt="Trophies">
-    </div>
-  </section>
+{% if coach%}
+<section id="coach-section">
+  <h2>Head Coach</h2>
+
+  <div class="coach-card">
+    <img src="{{ coach.image.url }}" alt="{{ coach.name }}"
+    <h3 class="coach-main">{{ coach.name }}</h3>
+    <p class="coach-bio">{{ coach.bio }}</p>
+    <a href="{{ coach.wiki_link }}" target="_blank" class="btn-send" style="text-decoration: none;">
+      Read actual biography in 'Wikipedia'
+    </a>
+  </div>
+</section>
+{% endif %}
+
+<!-- Gallery -->
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-container">
+    <img src="{% static 'images/old-trafford.jpg' %}" alt="Old Trafford">
+    <img src="{% static 'images/man-utd-team.jpg'%}" alt="Manchester United Team">
+    <img src="{% static 'images/trophy.jpg' %}" alt="Trophies">
+  </div>
+</section>
 
 {% endblock %}

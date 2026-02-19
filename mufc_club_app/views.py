@@ -1,12 +1,13 @@
 from django.shortcuts import render, redirect
-from .models import Player, FanMessage
+from .models import Player, FanMessage, Coach
 from .serializers import PlayerSerializer
 from rest_framework import generics
 from .forms import FanMessageForm
 
 
 def home(request):
-    return render(request, 'index.html')
+    coach = Coach.objects.first()
+    return render(request, 'index.html', {'coach': coach})
 
 
 def learn_more(request):
@@ -14,7 +15,8 @@ def learn_more(request):
 
 
 def players_list(request):
-    return render(request, 'players.html')
+    players = Player.objects.all().order_by('number')
+    return render(request, 'players.html', {'players': players})
 
 
 def fan_zone(request):
@@ -24,7 +26,7 @@ def fan_zone(request):
             form.save()
             return redirect('club:fan_zone')
     else:
-        form = FanMessageForm
+        form = FanMessageForm()
     messages = FanMessage.objects.all().order_by('-created_at')
     return render(request, 'fan_zone.html', {'form': form, 'messages': messages})
 

@@ -1,4 +1,4 @@
-/* ===== Helpers / Utilities ===== */
+/* === Utilities === */
 .icon-square {
   width: 3rem;
   height: 3rem;
@@ -11,19 +11,17 @@
   margin: 0 auto 10px;
   font-size: 1.5rem;
 }
-
 .club-logo {
   width: 120px;
   margin-bottom: 20px;
   filter: drop-shadow(0 6px 12px rgba(0,0,0,0.4));
 }
-
 .profile-img {
   height: 100px;
   border-radius: 50%;
 }
 
-/* ===== Global Layout ===== */
+/* === Global Layout === */
 body {
   margin: 0;
   font-family: "Roboto Mono";
@@ -31,7 +29,6 @@ body {
   background: linear-gradient(1600deg, #A50000, #DA291C);
   color: #FFFFFF;
 }
-
 section {
   padding: 60px 20px;
   border-radius: 10px;
@@ -39,27 +36,35 @@ section {
   max-width: 1200px;
 }
 
-/* ===== Navbar ===== */
+/* === Navbar === */
 #navbar {
   background-color: #111;
   padding: 15px;
 }
-
 #navbar a {
   color: red;
   margin: 0 25px;
   text-decoration: none;
   font-weight: bold;
 }
+#navbar a:hover {color: #FFFFFF;}
 
-#navbar a:hover {
-  color: #FFFFFF;
-}
-
-/* ===== Footer ===== */
+/* === Footer === */
 #footer {
   background-color: #111111;
   color: #FFCC00;
   padding: 5px;
   margin-top: 0;
+}
+
+/* === Coach === */
+#coach-section {
+  text-align: center;
+  padding: 40px;
+  background: #fff;
+}
+.coach-card:img {
+  width: 200px;
+  border-radius: 50%;
+  border: 5px solid #c70101;
 }

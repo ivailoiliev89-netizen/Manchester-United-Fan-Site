@@ -1,10 +1,38 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
 
   <section id="players">
     <h2>Current Squad</h2>
     <table id="players-table">
-        </table>
+
+      <thead>
+        <tr>
+          <th>Player</th>
+          <th>Position</th>
+          <th>Number</th>
+          <th>Nationality</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {% for player in players %}
+        <tr>
+          <td class="player-info">
+            {% if player.image %}
+              <img src="{{ player.image.url }}" alt="{{ player.name }}" class="player-img">
+            {% else %}
+              <img src="{% static 'images/default-avatar.png' %}" class="player-img">
+            {% endif %}
+            <span>{{ player.name }}</span>
+          </td>
+          <td>{{ player.position }}</td>
+          <td>{{ player.number }}</td>
+          <td>{{ player.nationality }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
   </section>
   
 {% endblock %}

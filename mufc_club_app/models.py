@@ -6,6 +6,8 @@ class Player(models.Model):
     position = models.CharField(max_length=50, verbose_name='Position')
     number = models.PositiveBigIntegerField(verbose_name='Number')
     nationality = models.CharField(max_length=50, verbose_name='Nationality')
+    image = models.ImageField(upload_to='players/',
+                              default='players/default_avatar.png')
 
     def __str__(self):
         return f"{self.number}. {self.name}"
@@ -13,6 +15,17 @@ class Player(models.Model):
     class Meta:
         verbose_name = 'Player'
         verbose_name_plural = 'Players'
+
+
+class Coach(models.Model):
+    name = models.CharField(max_length=100, verbose_name='Coach name')
+    role = models.CharField(max_length=100, default='Head coach ')
+    bio = models.TextField()
+    image = models.ImageField(upload_to='coach/')
+    wiki_link = models.URLField(blank=True)
+
+    def __str__(self):
+        return f"{self.name} is a {self.role}."
 
 
 class FanMessage(models.Model):
