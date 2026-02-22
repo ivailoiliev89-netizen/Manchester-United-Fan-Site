@@ -1,0 +1,76 @@
+/* === Hero Section ===*/
+.hero-container {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url("../images/old-trafford.jpg") center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+  }
+.hero-overlay {
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  font-size: 40px;;
+  border-radius: 20px;
+  text-align: center;
+}
+.hero-logo {
+  height: auto;
+  width: 150px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.5));
+}
+.hero-title,
+.hero-subtitle {
+  color:burlywood;
+  font-size: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* === Coach === */
+#club-hub {
+    padding: 40px 0;
+    background-color: #111;
+    color: wheat;
+    width: 100%;
+    background: transparent;
+}
+.hub-container {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    padding:20px;
+    z-index: 10;
+}
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+}
+
+/* Swiper */
+.swiper {
+    width: 80%;
+    height: 500px;
+    border-radius: 15px;
+}
+.swiper-slide {
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 2px solid #333;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}

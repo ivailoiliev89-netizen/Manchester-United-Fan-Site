@@ -1,0 +1,60 @@
+/* === Fan Zone === */
+#fan-zone {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+#fan-zone h1, .messages-container h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#000}
+.fan-form {
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
+  }
+.fan-form h2 {
+    color: #c70101;
+    margin-top: 0;
+}
+.form-group {margin-bottom: 15px;}
+.form-input,.form-textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+.form-textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* === Comments === */
+.message-card,.message-card p {
+    background: white;
+    border-left: 5px solid #c70101;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+}
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #555;
+}
+.message-header strong {
+    color: #222;
+    font-size: 1.1em;
+}
+.message-text {
+    line-height: 1.6;
+    color: #444;
+}

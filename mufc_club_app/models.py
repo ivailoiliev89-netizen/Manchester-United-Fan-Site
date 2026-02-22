@@ -39,3 +39,33 @@ class FanMessage(models.Model):
     class Meta:
         verbose_name = 'Fan message'
         verbose_name_plural = 'Fans messages'
+
+
+class News(models.Model):
+    title = models.CharField(max_length=200)
+    content = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
+
+
+class ClubInfo(models.Model):
+    category = models.CharField(max_length=50, verbose_name='Category')
+    details = models.TextField(verbose_name='Details')
+
+    def __str__(self):
+        return self.category
+
+
+class GalleryImage(models.Model):
+    title = models.CharField(max_length=100, blank=True, verbose_name='Title')
+    image = models.ImageField(upload_to='gallery/', verbose_name='Image')
+    uploaded_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title if self.title else f"Picture {self.id}"
+
+    class Meta:
+        verbose_name = 'Picture at the gallery'
+        verbose_name_plural = 'Gallery'

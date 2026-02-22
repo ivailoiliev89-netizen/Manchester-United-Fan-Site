@@ -1,0 +1,107 @@
+/* === Learn More  === */
+#history,#values,#legacy {
+  background-color: #A50000;
+  color: #FFFFFF;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  border-radius: 10px;
+  text-align: center;
+  border-bottom: 1px solid rgba(218, 41, 28, 0.2);
+}
+#legacy h2, #values h2, #history h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5rem;
+    color: #DA291C;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+#history p, #values p, #legacy p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ddd;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#values {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                url("/static/images/old-trafford-dark.jpg"); 
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#values strong {
+    display: block;
+    font-size: 2rem;
+    color: #DA291C;
+    font-family: 'Oswald';
+    margin-top: 20px;
+    text-transform: uppercase;
+    border: 2px solid #DA291C;
+    padding: 10px;
+    display: inline-block;
+}
+#history p::first-letter, #values p::first-letter,#legacy p::first-letter {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #DA291C;
+    float: left;
+    margin-right: 10px;
+    line-height: 1;
+    font-family: 'Bebas Neue';
+}
+#legacy h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #DA291C;
+    margin: 10px auto 0;
+}
+/* === Players === */
+#players {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+#players-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #fff;
+}
+#players-table th {
+  background-color: #DA291C;
+  color: #FFCC00;
+  padding: 15px;
+  text-transform: uppercase;
+}
+#players-table td {
+  border-bottom: 1px solid #eee;
+  background-color: #A50000;
+  color: #333;
+  padding: 10px;
+}
+.player-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: flex-start;
+  padding-left: 20px !important;
+}
+.player-img {
+  width: 45px;
+  height: 45px;
+  border-radius:50%;
+  object-fit: cover;
+  border: 2px solid #ebebeb
+}
+#players-table tr:hover{background-color: #f9f9f9;}
