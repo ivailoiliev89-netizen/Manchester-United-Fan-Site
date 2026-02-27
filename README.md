@@ -17,7 +17,7 @@ while architecting a scalable backend for club news and squad management.
 
 ## Tech Stack
 
-- ***Backend*** :  Python, Django
+- ***Backend*** :  Python , Django
 - ***Frontend*** :  JavaScript (ES6+), CSS3 (Grid and Flexbox), Swiper.js
 - ***Database*** :  PostgreSQL (Production) / SQLite (Development)
 - ***Security*** :  ***Integrated*** `python-dotenv` for secure environment variable management.
