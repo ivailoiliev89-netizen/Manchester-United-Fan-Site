@@ -5,9 +5,6 @@
     padding: 20px;
     font-family: 'Roboto', sans-serif;
 }
-#fan-zone h1, .messages-container h3 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:#000}
 .fan-form {
     background: #f4f4f4;
     padding: 30px;
@@ -16,8 +13,11 @@
     margin-bottom: 50px;
   }
 .fan-form h2 {
+    font-size: 22px;
+    line-height: 2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #c70101;
-    margin-top: 0;
+
 }
 .form-group {margin-bottom: 15px;}
 .form-input,.form-textarea {
@@ -35,14 +35,22 @@
 }
 
 /* === Comments === */
-.message-card,.message-card p {
+.message-card {
     background: white;
-    border-left: 5px solid #c70101;
+    border-left: 5px solid #111;
+    color: #c70101;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+}
+.messages-container p{font-family: 'Courier New', Courier, monospace; color:bisque;}
+.messages-container h3, #fan-zone h1 {
+    font-size: 22px;
+    line-height: 2;
+    color:#000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .message-header {
     display: flex;
@@ -50,11 +58,6 @@
     margin-bottom: 10px;
     color: #555;
 }
-.message-header strong {
-    color: #222;
-    font-size: 1.1em;
-}
-.message-text {
-    line-height: 1.6;
-    color: #444;
-}
+.message-header strong {color: #222;font-size: 1.1em;}
+.message-text {line-height: 1.6; background: #111;}
+.message-card p {color: #c70101;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 20px;}

@@ -45,7 +45,9 @@
     padding: 10px;
     display: inline-block;
 }
-#history p::first-letter, #values p::first-letter,#legacy p::first-letter {
+#history p::first-letter,
+#values p::first-letter,
+#legacy p::first-letter {
     font-size: 4rem;
     font-weight: bold;
     color: #DA291C;
@@ -62,6 +64,7 @@
     background: #DA291C;
     margin: 10px auto 0;
 }
+
 /* === Players === */
 #players {
     padding: 50px 20px;
@@ -69,6 +72,7 @@
     margin: 0 auto;
     text-align: center;
 }
+#players h2 {font-size: 30px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color:wheat;}
 #players-table {
   width: 100%;
   border-collapse: collapse;
@@ -79,14 +83,15 @@
   background-color: #fff;
 }
 #players-table th {
-  background-color: #DA291C;
+  background-color: #111;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #FFCC00;
   padding: 15px;
   text-transform: uppercase;
 }
 #players-table td {
-  border-bottom: 1px solid #eee;
-  background-color: #A50000;
+  border-bottom: 1px solid #111;
+  background-color: white;
   color: #333;
   padding: 10px;
 }
@@ -102,6 +107,7 @@
   height: 45px;
   border-radius:50%;
   object-fit: cover;
-  border: 2px solid #ebebeb
+  border: 2px solid #DA291C;
 }
 #players-table tr:hover{background-color: #f9f9f9;}
+#players-table tr {background: white;font-size: 22px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
